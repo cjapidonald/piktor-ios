@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PixelBeeApp: App {
+struct PiktorApp: App {
     @StateObject private var supabaseManager = SupabaseManager.shared
 
     var body: some Scene {

@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PixelBee",
+    name: "Piktor",
     platforms: [
         .iOS(.v17)
     ],
@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "PixelBee",
+            name: "Piktor",
             dependencies: [
                 .product(name: "Supabase", package: "supabase-swift")
             ],

@@ -1,15 +1,15 @@
-# PixelBee iOS - Pixel Art Editor
+# Piktor iOS - Pixel Art Editor
 
 ## Overview
-PixelBee is a SwiftUI-based iOS pixel art editor that connects to an existing Supabase backend. It allows team members to manage pixel art tasks, draw sprites using a touch-based editor, and save artwork to cloud storage.
+Piktor is a SwiftUI-based iOS pixel art editor that connects to an existing Supabase backend. It allows team members to manage pixel art tasks, draw sprites using a touch-based editor, and save artwork to cloud storage.
 
 ## Project Structure
 ```
-pixelbee-ios/
+piktor-ios/
 ├── Package.swift                    # SPM manifest (supabase-swift 2.x, iOS 17+)
 ├── CLAUDE.md                        # This file
 ├── Sources/
-│   ├── PixelBeeApp.swift            # @main App entry point
+│   ├── PiktorApp.swift            # @main App entry point
 │   ├── Config.swift                 # Supabase URL + anon key
 │   ├── Models/
 │   │   ├── Models.swift             # Codable data models matching Supabase schema
@@ -36,22 +36,22 @@ pixelbee-ios/
 
 ### Using Xcode (Recommended)
 1. Open Xcode
-2. File > Open > select `pixelbee-ios/Package.swift`
+2. File > Open > select `piktor-ios/Package.swift`
 3. Wait for SPM to resolve dependencies
 4. Select an iOS 17+ simulator or device
 5. Build & Run (Cmd+R)
 
 ### Using Command Line
 ```bash
-cd pixelbee-ios
+cd piktor-ios
 swift build
 ```
 Note: `swift build` will compile but the app runs on iOS so you need Xcode/simulator for full testing.
 
 ### Using xcodebuild
 ```bash
-cd pixelbee-ios
-xcodebuild -scheme PixelBee -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0' build
+cd piktor-ios
+xcodebuild -scheme Piktor -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0' build
 ```
 
 ## Supabase Connection

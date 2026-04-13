@@ -173,7 +173,7 @@ class SupabaseManager: ObservableObject {
 
     func saveDrawing(taskId: Int?, canvasSize: Int, pixelData: DrawingData, title: String?) async throws -> Drawing {
         guard let userId = currentUser?.id else {
-            throw NSError(domain: "PixelBee", code: 401, userInfo: [NSLocalizedDescriptionKey: "Not authenticated"])
+            throw NSError(domain: "Piktor", code: 401, userInfo: [NSLocalizedDescriptionKey: "Not authenticated"])
         }
 
         let insert = DrawingInsert(
