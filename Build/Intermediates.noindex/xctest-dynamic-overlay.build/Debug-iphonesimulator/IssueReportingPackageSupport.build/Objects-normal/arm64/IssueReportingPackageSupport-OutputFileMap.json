@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/IssueReportingPackageSupport-primary.dia",
+    "emit-module-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/IssueReportingPackageSupport-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/IssueReportingPackageSupport-primary-emit-module.dia",
+    "pch" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/IssueReportingPackageSupport-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/IssueReportingPackageSupport-primary.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/xctest-dynamic-overlay/Sources/IssueReportingPackageSupport/_Test.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.dia",
+    "index-unit-output-path" : "/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/xctest-dynamic-overlay.build/Debug-iphonesimulator/IssueReportingPackageSupport.build/Objects-normal/arm64/_Test~partial.swiftmodule"
+  }
+}

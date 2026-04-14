@@ -36,7 +36,7 @@ struct LoginView: View {
                             )
                         )
 
-                    Text("PIXELBEE")
+                    Text("PIKTOR STUDIO")
                         .font(.system(size: 32, weight: .black, design: .monospaced))
                         .foregroundColor(.white)
 

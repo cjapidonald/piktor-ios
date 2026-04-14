@@ -7,18 +7,50 @@ import UIKit
 // MARK: - Drawing Tool Enum
 enum DrawingTool: String, CaseIterable {
     case pen = "Pen"
+    case brush = "Brush"
+    case spray = "Spray"
     case eraser = "Eraser"
     case fill = "Fill"
+    case line = "Line"
+    case rect = "Rect"
+    case circle = "Circle"
+    case gradient = "Gradient"
     case eyedropper = "Eyedropper"
+    case text = "Text"
 
     var icon: String {
         switch self {
         case .pen: return "pencil.tip"
+        case .brush: return "paintbrush"
+        case .spray: return "aqi.medium"
         case .eraser: return "eraser"
         case .fill: return "drop.fill"
+        case .line: return "line.diagonal"
+        case .rect: return "rectangle"
+        case .circle: return "circle"
+        case .gradient: return "square.fill.on.square.fill"
         case .eyedropper: return "eyedropper"
+        case .text: return "textformat"
         }
     }
+
+    /// Whether this tool draws shapes via drag start/end
+    var isShapeTool: Bool {
+        switch self {
+        case .line, .rect, .circle:
+            return true
+        default:
+            return false
+        }
+    }
+}
+
+// MARK: - Mirror Mode
+enum MirrorMode: String {
+    case off
+    case horizontal
+    case vertical
+    case both
 }
 
 // MARK: - Undo Action
@@ -35,6 +67,9 @@ class EditorState: ObservableObject {
     @Published var selectedColor: String = "000000"
     @Published var showGrid: Bool = true
     @Published var currentLayerIndex: Int = 0
+
+    @Published var mirrorMode: MirrorMode = .off
+    @Published var shapeStart: (Int, Int)? = nil
 
     @Published var taskId: Int?
     @Published var drawingId: UUID?
@@ -103,17 +138,70 @@ class EditorState: ObservableObject {
         pixels[idx] = color
     }
 
+    // MARK: - Apply Color with Mirror Support
+
+    /// Sets a pixel and its mirrored counterparts based on mirrorMode
+    private func setPixelWithMirror(x: Int, y: Int, color: String?) {
+        setPixel(x: x, y: y, color: color)
+
+        if mirrorMode != .off {
+            let mirrorH = mirrorMode == .horizontal || mirrorMode == .both
+            let mirrorV = mirrorMode == .vertical || mirrorMode == .both
+            let mirrored = DrawingTools.mirrorPoints(
+                points: [(x, y)],
+                canvasSize: canvasSize,
+                horizontal: mirrorH,
+                vertical: mirrorV
+            )
+            for (mx, my) in mirrored {
+                setPixel(x: mx, y: my, color: color)
+            }
+        }
+    }
+
+    /// Applies color to a set of points with mirror support
+    private func applyPointsWithMirror(_ points: [(Int, Int)], color: String?) {
+        for (px, py) in points {
+            setPixel(x: px, y: py, color: color)
+        }
+
+        if mirrorMode != .off {
+            let mirrorH = mirrorMode == .horizontal || mirrorMode == .both
+            let mirrorV = mirrorMode == .vertical || mirrorMode == .both
+            let mirrored = DrawingTools.mirrorPoints(
+                points: points,
+                canvasSize: canvasSize,
+                horizontal: mirrorH,
+                vertical: mirrorV
+            )
+            for (mx, my) in mirrored {
+                setPixel(x: mx, y: my, color: color)
+            }
+        }
+    }
+
     // MARK: - Tool Actions
 
     func applyTool(at x: Int, y: Int) {
         switch selectedTool {
         case .pen:
             pushUndo()
-            setPixel(x: x, y: y, color: selectedColor)
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
+        case .brush:
+            pushUndo()
+            let points = DrawingTools.brushPixels(x: x, y: y, radius: 2)
+                .filter { $0.0 >= 0 && $0.0 < canvasSize && $0.1 >= 0 && $0.1 < canvasSize }
+            applyPointsWithMirror(points, color: selectedColor)
+
+        case .spray:
+            pushUndo()
+            let points = DrawingTools.sprayPixels(x: x, y: y, radius: 3, count: 8, canvasSize: canvasSize)
+            applyPointsWithMirror(points, color: selectedColor)
 
         case .eraser:
             pushUndo()
-            setPixel(x: x, y: y, color: nil)
+            setPixelWithMirror(x: x, y: y, color: nil)
 
         case .fill:
             pushUndo()
@@ -129,6 +217,20 @@ class EditorState: ObservableObject {
                 )
             }
 
+        case .line, .rect, .circle:
+            // Shape tools: store start point on first touch
+            shapeStart = (x, y)
+
+        case .gradient:
+            // For now, treat like pen
+            pushUndo()
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
+        case .text:
+            // For now, treat like pen
+            pushUndo()
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
         case .eyedropper:
             if let color = getPixel(x: x, y: y) {
                 selectedColor = color
@@ -139,11 +241,94 @@ class EditorState: ObservableObject {
     func applyToolDrag(at x: Int, y: Int) {
         switch selectedTool {
         case .pen:
-            setPixel(x: x, y: y, color: selectedColor)
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
+        case .brush:
+            let points = DrawingTools.brushPixels(x: x, y: y, radius: 2)
+                .filter { $0.0 >= 0 && $0.0 < canvasSize && $0.1 >= 0 && $0.1 < canvasSize }
+            applyPointsWithMirror(points, color: selectedColor)
+
+        case .spray:
+            let points = DrawingTools.sprayPixels(x: x, y: y, radius: 3, count: 5, canvasSize: canvasSize)
+            applyPointsWithMirror(points, color: selectedColor)
+
         case .eraser:
-            setPixel(x: x, y: y, color: nil)
-        case .fill, .eyedropper:
+            setPixelWithMirror(x: x, y: y, color: nil)
+
+        case .gradient:
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
+        case .text:
+            setPixelWithMirror(x: x, y: y, color: selectedColor)
+
+        case .fill, .eyedropper, .line, .rect, .circle:
+            // These tools don't apply on drag (shapes are handled in canvas view)
             break
+        }
+    }
+
+    /// Apply a shape tool on release (line, rect, circle)
+    func applyShapeEnd(at x: Int, y: Int) {
+        guard let start = shapeStart else { return }
+        pushUndo()
+
+        var shapePoints: [(Int, Int)] = []
+
+        switch selectedTool {
+        case .line:
+            shapePoints = DrawingTools.linePixels(from: start, to: (x, y))
+
+        case .rect:
+            shapePoints = DrawingTools.rectanglePixels(x0: start.0, y0: start.1, x1: x, y1: y)
+
+        case .circle:
+            let cx = (start.0 + x) / 2
+            let cy = (start.1 + y) / 2
+            let rx = abs(x - start.0) / 2
+            let ry = abs(y - start.1) / 2
+            let r = max(rx, ry)
+            shapePoints = DrawingTools.circlePixels(cx: cx, cy: cy, r: r)
+
+        default:
+            break
+        }
+
+        // Filter to canvas bounds
+        let validPoints = shapePoints.filter {
+            $0.0 >= 0 && $0.0 < canvasSize && $0.1 >= 0 && $0.1 < canvasSize
+        }
+        applyPointsWithMirror(validPoints, color: selectedColor)
+
+        shapeStart = nil
+    }
+
+    /// Get preview pixels for the current shape being drawn
+    func shapePreviewPixels(currentX: Int, currentY: Int) -> [(Int, Int)] {
+        guard let start = shapeStart else { return [] }
+
+        var shapePoints: [(Int, Int)] = []
+
+        switch selectedTool {
+        case .line:
+            shapePoints = DrawingTools.linePixels(from: start, to: (currentX, currentY))
+
+        case .rect:
+            shapePoints = DrawingTools.rectanglePixels(x0: start.0, y0: start.1, x1: currentX, y1: currentY)
+
+        case .circle:
+            let cx = (start.0 + currentX) / 2
+            let cy = (start.1 + currentY) / 2
+            let rx = abs(currentX - start.0) / 2
+            let ry = abs(currentY - start.1) / 2
+            let r = max(rx, ry)
+            shapePoints = DrawingTools.circlePixels(cx: cx, cy: cy, r: r)
+
+        default:
+            break
+        }
+
+        return shapePoints.filter {
+            $0.0 >= 0 && $0.0 < canvasSize && $0.1 >= 0 && $0.1 < canvasSize
         }
     }
 

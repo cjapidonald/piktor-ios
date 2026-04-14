@@ -1,0 +1,149 @@
+{
+  "" : {
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Piktor-primary.dia",
+    "emit-module-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Piktor-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Piktor-primary-emit-module.dia",
+    "pch" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Piktor-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Piktor-primary.swiftdeps"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Config.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Config~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Models/Models.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/Models~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Models/SupabaseManager.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/SupabaseManager~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/PiktorApp.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PiktorApp~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Utils/DrawingTools.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingTools~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Utils/EditorState.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorState~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Auth/LoginView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/LoginView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Dashboard/DashboardView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/ColorPickerView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ColorPickerView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/DrawingsGalleryView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/DrawingsGalleryView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/EditorView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/EditorView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/PixelCanvasView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/PixelCanvasView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/ToolBarView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/ToolBarView~partial.swiftmodule"
+  },
+  "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Tasks/TasksView.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.dia",
+    "index-unit-output-path" : "/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.o",
+    "llvm-bc" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.bc",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView.swiftdeps",
+    "swiftmodule" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Piktor.build/Debug-iphonesimulator/Piktor.build/Objects-normal/arm64/TasksView~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Signatures/BoringSSL/MLDSA_wrapper.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA_wrapper.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA_wrapper.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA_wrapper.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA_wrapper.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA_wrapper.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Signatures/ECDSA.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/ECDSA.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/ECDSA.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/ECDSA.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/ECDSA.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/ECDSA.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Signatures/Ed25519.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Ed25519.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Ed25519.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Ed25519.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Ed25519.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Ed25519.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Signatures/MLDSA.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/MLDSA.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Signatures/Signature.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Signature.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Signature.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Signature.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Signature.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Signature.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Util/BoringSSL/CryptoKitErrors_boring.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/CryptoKitErrors_boring.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/CryptoKitErrors_boring.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/CryptoKitErrors_boring.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/CryptoKitErrors_boring.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/CryptoKitErrors_boring.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/swift-crypto/Sources/Crypto/Util/BoringSSL/Optional+withUnsafeBytes_boring.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Optional+withUnsafeBytes_boring.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Optional+withUnsafeBytes_boring.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Optional+withUnsafeBytes_boring.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Optional+withUnsafeBytes_boring.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/swift-crypto.build/Debug-iphonesimulator/Crypto.build/Objects-normal/arm64/Optional+withUnsafeBytes_boring.swiftdeps"
+  }
+}

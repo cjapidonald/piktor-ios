@@ -5,8 +5,8 @@ struct EditorView: View {
     @StateObject private var editorState: EditorState
     @Environment(\.dismiss) private var dismiss
 
-    @State private var showSaveAlert = false
     @State private var showClearAlert = false
+    @State private var showColorPicker = false
 
     init(taskId: Int? = nil, canvasSize: Int = AppConfig.defaultCanvasSize, drawing: Drawing? = nil) {
         let state = EditorState(canvasSize: canvasSize, taskId: taskId)
@@ -22,20 +22,19 @@ struct EditorView: View {
         _editorState = StateObject(wrappedValue: state)
     }
 
+    // MARK: - Body (matches webapp mobile layout)
+
     var body: some View {
         VStack(spacing: 0) {
-            // Top toolbar
-            editorToolbar
-
-            // Canvas area
+            // Canvas fills all available space
             GeometryReader { geometry in
                 ZStack {
                     Color(hex: "0D1117")
 
                     PixelCanvasView(editorState: editorState)
                         .frame(
-                            width: min(geometry.size.width - 16, geometry.size.height - 16),
-                            height: min(geometry.size.width - 16, geometry.size.height - 16)
+                            width: min(geometry.size.width - 8, geometry.size.height - 8),
+                            height: min(geometry.size.width - 8, geometry.size.height - 8)
                         )
                         .scaleEffect(editorState.zoomScale)
                         .offset(editorState.panOffset)
@@ -43,11 +42,182 @@ struct EditorView: View {
                 }
             }
 
-            // Tool bar
-            ToolBarView(editorState: editorState)
+            // Save toast
+            if editorState.saveSuccess {
+                HStack(spacing: 6) {
+                    Image(systemName: "checkmark.circle")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text("Saved!")
+                        .font(.system(size: 12, weight: .medium))
+                }
+                .foregroundColor(Color(hex: "6EE7B7"))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 6)
+                .background(Color(hex: "065F46").opacity(0.85))
+            }
 
-            // Color picker
-            ColorPickerView(editorState: editorState)
+            if let error = editorState.saveError {
+                HStack(spacing: 6) {
+                    Image(systemName: "xmark.circle")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text("Save failed")
+                        .font(.system(size: 12, weight: .medium))
+                }
+                .foregroundColor(Color(hex: "FCA5A5"))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 6)
+                .background(Color(hex: "B91C1C").opacity(0.85))
+            }
+
+            // Color palette strip (toggleable)
+            if showColorPicker {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 4) {
+                        ForEach(ColorPickerView.palette, id: \.self) { hex in
+                            Button {
+                                editorState.selectedColor = hex
+                                showColorPicker = false
+                            } label: {
+                                RoundedRectangle(cornerRadius: 4)
+                                    .fill(Color(hex: hex))
+                                    .frame(width: 28, height: 28)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 4)
+                                            .stroke(
+                                                editorState.selectedColor == hex ? Color.white : Color.clear,
+                                                lineWidth: editorState.selectedColor == hex ? 2 : 0
+                                            )
+                                    )
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 6)
+                }
+                .background(Color(hex: "161B22"))
+            }
+
+            // Bottom toolbar — 3 rows of 7 (matches webapp grid-cols-7)
+            VStack(spacing: 0) {
+                // Row 1: pen, brush, spray, eraser, fill, line, rect
+                HStack(spacing: 0) {
+                    tbTool(.pen)
+                    tbTool(.brush)
+                    tbTool(.spray)
+                    tbTool(.eraser)
+                    tbTool(.fill)
+                    tbTool(.line)
+                    tbTool(.rect)
+                }
+
+                // Row 2: circle, gradient, eyedropper, text, color, undo, save
+                HStack(spacing: 0) {
+                    tbTool(.circle)
+                    tbTool(.gradient)
+                    tbTool(.eyedropper)
+                    tbTool(.text)
+
+                    // Color swatch
+                    Button { showColorPicker.toggle() } label: {
+                        RoundedRectangle(cornerRadius: 4)
+                            .fill(Color(hex: editorState.selectedColor))
+                            .frame(width: 22, height: 22)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 4)
+                                    .stroke(Color.white.opacity(0.4), lineWidth: 1)
+                            )
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+
+                    // Undo
+                    Button { editorState.undo() } label: {
+                        Image(systemName: "arrow.uturn.backward")
+                            .font(.system(size: 16))
+                            .foregroundColor(editorState.canUndo ? Color(hex: "9CA3AF") : Color(hex: "374151"))
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+
+                    // Save (green)
+                    Button { Task { await editorState.save() } } label: {
+                        Group {
+                            if editorState.isSaving {
+                                ProgressView()
+                                    .scaleEffect(0.7)
+                                    .tint(.white)
+                            } else {
+                                Image(systemName: "square.and.arrow.down")
+                                    .font(.system(size: 16))
+                            }
+                        }
+                        .foregroundColor(.white)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+                    .background(Color(hex: "22C55E"))
+                    .disabled(editorState.isSaving)
+                }
+
+                // Row 3: mirrorH, mirrorV, mirrorBoth, size, redo, clear, back
+                HStack(spacing: 0) {
+                    tbMirror("H", isActive: editorState.mirrorMode == .horizontal || editorState.mirrorMode == .both) {
+                        switch editorState.mirrorMode {
+                        case .off: editorState.mirrorMode = .horizontal
+                        case .horizontal: editorState.mirrorMode = .off
+                        case .vertical: editorState.mirrorMode = .both
+                        case .both: editorState.mirrorMode = .vertical
+                        }
+                    }
+                    tbMirror("V", isActive: editorState.mirrorMode == .vertical || editorState.mirrorMode == .both) {
+                        switch editorState.mirrorMode {
+                        case .off: editorState.mirrorMode = .vertical
+                        case .vertical: editorState.mirrorMode = .off
+                        case .horizontal: editorState.mirrorMode = .both
+                        case .both: editorState.mirrorMode = .horizontal
+                        }
+                    }
+                    tbMirror("HV", isActive: editorState.mirrorMode == .both) {
+                        editorState.mirrorMode = editorState.mirrorMode == .both ? .off : .both
+                    }
+
+                    // Canvas size
+                    Text("\(editorState.canvasSize)")
+                        .font(.system(size: 11, weight: .bold, design: .monospaced))
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 44)
+
+                    // Redo
+                    Button { editorState.redo() } label: {
+                        Image(systemName: "arrow.uturn.forward")
+                            .font(.system(size: 16))
+                            .foregroundColor(editorState.canRedo ? Color(hex: "9CA3AF") : Color(hex: "374151"))
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+
+                    // Clear
+                    Button { showClearAlert = true } label: {
+                        Image(systemName: "trash")
+                            .font(.system(size: 16))
+                            .foregroundColor(.red.opacity(0.8))
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+
+                    // Back (green)
+                    Button { dismiss() } label: {
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 16, weight: .semibold))
+                            .foregroundColor(.white)
+                    }
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 44)
+                    .background(Color(hex: "22C55E"))
+                }
+            }
+            .background(Color(hex: "0D1117"))
         }
         .background(Color(hex: "0D1117"))
         .navigationBarHidden(true)
@@ -74,86 +244,33 @@ struct EditorView: View {
         }
     }
 
-    // MARK: - Editor Toolbar
+    // MARK: - Tool Button
 
-    private var editorToolbar: some View {
-        HStack(spacing: 12) {
-            // Back button
-            Button(action: { dismiss() }) {
-                Image(systemName: "chevron.left")
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundColor(Color(hex: "FFD700"))
-            }
-
-            // Title
-            VStack(alignment: .leading, spacing: 1) {
-                Text(editorState.drawingTitle ?? "New Drawing")
-                    .font(.system(size: 14, weight: .bold, design: .monospaced))
-                    .foregroundColor(.white)
-                    .lineLimit(1)
-
-                Text("\(editorState.canvasSize)x\(editorState.canvasSize)")
-                    .font(.system(size: 10, design: .monospaced))
-                    .foregroundColor(.secondary)
-            }
-
-            Spacer()
-
-            // Undo
-            Button(action: { editorState.undo() }) {
-                Image(systemName: "arrow.uturn.backward")
-                    .font(.system(size: 16))
-                    .foregroundColor(editorState.canUndo ? .white : Color(hex: "30363D"))
-            }
-            .disabled(!editorState.canUndo)
-
-            // Redo
-            Button(action: { editorState.redo() }) {
-                Image(systemName: "arrow.uturn.forward")
-                    .font(.system(size: 16))
-                    .foregroundColor(editorState.canRedo ? .white : Color(hex: "30363D"))
-            }
-            .disabled(!editorState.canRedo)
-
-            // Grid toggle
-            Button(action: { editorState.showGrid.toggle() }) {
-                Image(systemName: editorState.showGrid ? "grid" : "grid.circle")
-                    .font(.system(size: 16))
-                    .foregroundColor(editorState.showGrid ? Color(hex: "FFD700") : .secondary)
-            }
-
-            // Clear
-            Button(action: { showClearAlert = true }) {
-                Image(systemName: "trash")
-                    .font(.system(size: 16))
-                    .foregroundColor(.red.opacity(0.8))
-            }
-
-            // Save
-            Button(action: { Task { await editorState.save() } }) {
-                HStack(spacing: 4) {
-                    if editorState.isSaving {
-                        ProgressView()
-                            .scaleEffect(0.7)
-                            .tint(.black)
-                    } else {
-                        Image(systemName: "square.and.arrow.down")
-                            .font(.system(size: 14))
-                    }
-                    Text("SAVE")
-                        .font(.system(size: 11, weight: .bold, design: .monospaced))
-                }
-                .foregroundColor(.black)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 6)
-                .background(Color(hex: "FFD700"))
-                .cornerRadius(6)
-            }
-            .disabled(editorState.isSaving)
+    private func tbTool(_ tool: DrawingTool) -> some View {
+        let isActive = editorState.selectedTool == tool
+        return Button {
+            editorState.selectedTool = tool
+        } label: {
+            Image(systemName: tool.icon)
+                .font(.system(size: 16))
+                .foregroundColor(isActive ? .white : Color(hex: "9CA3AF"))
         }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 8)
-        .background(Color(hex: "161B22"))
+        .frame(maxWidth: .infinity)
+        .frame(height: 44)
+        .background(isActive ? Color(hex: "374151") : Color.clear)
+    }
+
+    // MARK: - Mirror Button
+
+    private func tbMirror(_ label: String, isActive: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Text(label)
+                .font(.system(size: 11, weight: .bold, design: .monospaced))
+                .foregroundColor(isActive ? .white : Color(hex: "9CA3AF"))
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 44)
+        .background(isActive ? Color(hex: "374151") : Color.clear)
     }
 
     // MARK: - Gestures

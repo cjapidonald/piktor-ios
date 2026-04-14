@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00000000000000000000001 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* Config.swift */; };
+		B00000000000000000000002 /* PiktorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* PiktorApp.swift */; };
+		B00000000000000000000003 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000003 /* Models.swift */; };
+		B00000000000000000000004 /* SupabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000004 /* SupabaseManager.swift */; };
+		B00000000000000000000005 /* DrawingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* DrawingTools.swift */; };
+		B00000000000000000000006 /* EditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000006 /* EditorState.swift */; };
+		B00000000000000000000007 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000007 /* LoginView.swift */; };
+		B00000000000000000000008 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000008 /* DashboardView.swift */; };
+		B00000000000000000000009 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000009 /* ColorPickerView.swift */; };
+		B0000000000000000000000A /* DrawingsGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000A /* DrawingsGalleryView.swift */; };
+		B0000000000000000000000B /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000B /* EditorView.swift */; };
+		B0000000000000000000000C /* PixelCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000C /* PixelCanvasView.swift */; };
+		B0000000000000000000000D /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000D /* ToolBarView.swift */; };
+		B0000000000000000000000E /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000E /* TasksView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000001 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A00000000000000000000002 /* PiktorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiktorApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000003 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A00000000000000000000004 /* SupabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseManager.swift; sourceTree = "<group>"; };
+		A00000000000000000000005 /* DrawingTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTools.swift; sourceTree = "<group>"; };
+		A00000000000000000000006 /* EditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorState.swift; sourceTree = "<group>"; };
+		A00000000000000000000007 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A00000000000000000000008 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A00000000000000000000009 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000A /* DrawingsGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsGalleryView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000B /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000C /* PixelCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelCanvasView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000D /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000E /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
+		A0000000000000000000000F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000010 /* Piktor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piktor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000002 /* Sources */,
+				C0000000000000000000000A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00000000000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000002 /* PiktorApp.swift */,
+				A00000000000000000000001 /* Config.swift */,
+				A0000000000000000000000F /* Info.plist */,
+				C00000000000000000000003 /* Models */,
+				C00000000000000000000004 /* Utils */,
+				C00000000000000000000005 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000003 /* Models.swift */,
+				A00000000000000000000004 /* SupabaseManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000004 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000005 /* DrawingTools.swift */,
+				A00000000000000000000006 /* EditorState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000006 /* Auth */,
+				C00000000000000000000007 /* Dashboard */,
+				C00000000000000000000008 /* Editor */,
+				C00000000000000000000009 /* Tasks */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000006 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000007 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000007 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000008 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000008 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000009 /* ColorPickerView.swift */,
+				A0000000000000000000000A /* DrawingsGalleryView.swift */,
+				A0000000000000000000000B /* EditorView.swift */,
+				A0000000000000000000000C /* PixelCanvasView.swift */,
+				A0000000000000000000000D /* ToolBarView.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000009 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000000E /* TasksView.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		C0000000000000000000000A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000010 /* Piktor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00000000000000000000002 /* Piktor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00000000000000000000002 /* Build configuration list for PBXNativeTarget "Piktor" */;
+			buildPhases = (
+				D00000000000000000000001 /* Sources */,
+				D00000000000000000000002 /* Frameworks */,
+				D00000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Piktor;
+			packageProductDependencies = (
+				D10000000000000000000002 /* Supabase */,
+			);
+			productName = Piktor;
+			productReference = A00000000000000000000010 /* Piktor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = F00000000000000000000001 /* Build configuration list for PBXProject "Piktor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C00000000000000000000001;
+			packageReferences = (
+				D10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = C0000000000000000000000A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00000000000000000000002 /* Piktor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000001 /* Config.swift in Sources */,
+				B00000000000000000000002 /* PiktorApp.swift in Sources */,
+				B00000000000000000000003 /* Models.swift in Sources */,
+				B00000000000000000000004 /* SupabaseManager.swift in Sources */,
+				B00000000000000000000005 /* DrawingTools.swift in Sources */,
+				B00000000000000000000006 /* EditorState.swift in Sources */,
+				B00000000000000000000007 /* LoginView.swift in Sources */,
+				B00000000000000000000008 /* DashboardView.swift in Sources */,
+				B00000000000000000000009 /* ColorPickerView.swift in Sources */,
+				B0000000000000000000000A /* DrawingsGalleryView.swift in Sources */,
+				B0000000000000000000000B /* EditorView.swift in Sources */,
+				B0000000000000000000000C /* PixelCanvasView.swift in Sources */,
+				B0000000000000000000000D /* ToolBarView.swift in Sources */,
+				B0000000000000000000000E /* TasksView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F10000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F10000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piktorstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F10000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.piktorstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00000000000000000000001 /* Build configuration list for PBXProject "Piktor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000001 /* Debug */,
+				F10000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00000000000000000000002 /* Build configuration list for PBXNativeTarget "Piktor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000000003 /* Debug */,
+				F10000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10000000000000000000002 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10000000000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E00000000000000000000001 /* Project object */;
+}

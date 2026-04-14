@@ -55,9 +55,9 @@ class SupabaseManager: ObservableObject {
         if let session = response.session {
             currentUser = session.user
             isAuthenticated = true
-        } else if let user = response.user {
+        } else {
             // User created but may need email confirmation
-            currentUser = user
+            currentUser = response.user
             isAuthenticated = false
         }
     }
@@ -85,10 +85,6 @@ class SupabaseManager: ObservableObject {
         } catch {
             print("Error fetching profile: \(error)")
         }
-    }
-
-    var isManager: Bool {
-        currentProfile?.role == "manager" || currentProfile?.role == "admin"
     }
 
     // MARK: - Worlds
@@ -243,6 +239,19 @@ class SupabaseManager: ObservableObject {
             .execute()
 
         return publicURL.absoluteString
+    }
+
+    // MARK: - Blog Posts
+
+    func fetchBlogPosts() async throws -> [BlogPost] {
+        let posts: [BlogPost] = try await client
+            .from("blog_posts")
+            .select()
+            .eq("published", value: true)
+            .order("created_at", ascending: false)
+            .execute()
+            .value
+        return posts
     }
 
     // MARK: - Dashboard Stats

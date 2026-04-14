@@ -1,0 +1,80 @@
+{
+  "source": "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Tasks/TasksView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Tasks",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 86
+        }
+      },
+      {
+        "comment": "",
+        "key": "Loading tasks...",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retry",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "No tasks found",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Worlds",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Statuses",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lldx%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "| %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "DRAW",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 268
+        }
+      }
+    ]
+  },
+  "version": 1
+}

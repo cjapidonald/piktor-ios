@@ -5,6 +5,7 @@ struct PixelCanvasView: View {
 
     @State private var lastDragPixel: (Int, Int)?
     @State private var isDragging = false
+    @State private var currentDragPixel: (Int, Int)?
 
     var body: some View {
         GeometryReader { geometry in
@@ -40,6 +41,24 @@ struct PixelCanvasView: View {
                                 with: .color(isLight ? Color(hex: "2A2A2A") : Color(hex: "1E1E1E"))
                             )
                         }
+                    }
+                }
+
+                // Draw shape preview overlay during drag
+                if editorState.selectedTool.isShapeTool,
+                   editorState.shapeStart != nil,
+                   let current = currentDragPixel {
+                    let previewPixels = editorState.shapePreviewPixels(currentX: current.0, currentY: current.1)
+                    let previewColor = Color(hex: editorState.selectedColor).opacity(0.6)
+
+                    for (px, py) in previewPixels {
+                        let previewRect = CGRect(
+                            x: CGFloat(px) * pxSize,
+                            y: CGFloat(py) * pxSize,
+                            width: pxSize,
+                            height: pxSize
+                        )
+                        context.fill(Path(previewRect), with: .color(previewColor))
                     }
                 }
 
@@ -81,21 +100,43 @@ struct PixelCanvasView: View {
                         guard x >= 0, x < editorState.canvasSize,
                               y >= 0, y < editorState.canvasSize else { return }
 
-                        if !isDragging {
-                            // First touch
-                            isDragging = true
-                            lastDragPixel = (x, y)
-                            editorState.applyTool(at: x, y: y)
-                        } else if let last = lastDragPixel, (last.0 != x || last.1 != y) {
-                            // Dragging to new pixel - use Bresenham for smooth lines
-                            let linePixels = DrawingTools.linePixels(from: last, to: (x, y))
-                            for (px, py) in linePixels {
-                                editorState.applyToolDrag(at: px, y: py)
+                        if editorState.selectedTool.isShapeTool {
+                            // Shape tools: record start on first touch, update preview on drag
+                            if !isDragging {
+                                isDragging = true
+                                editorState.applyTool(at: x, y: y) // stores shapeStart
+                                currentDragPixel = (x, y)
+                            } else {
+                                currentDragPixel = (x, y)
                             }
-                            lastDragPixel = (x, y)
+                        } else {
+                            // Non-shape tools: standard behavior
+                            if !isDragging {
+                                // First touch
+                                isDragging = true
+                                lastDragPixel = (x, y)
+                                editorState.applyTool(at: x, y: y)
+                            } else if let last = lastDragPixel, (last.0 != x || last.1 != y) {
+                                // Dragging to new pixel - use Bresenham for smooth lines
+                                let linePixels = DrawingTools.linePixels(from: last, to: (x, y))
+                                for (px, py) in linePixels {
+                                    editorState.applyToolDrag(at: px, y: py)
+                                }
+                                lastDragPixel = (x, y)
+                            }
                         }
                     }
-                    .onEnded { _ in
+                    .onEnded { value in
+                        if editorState.selectedTool.isShapeTool {
+                            // Shape tools: calculate final shape and apply on release
+                            let x = Int(value.location.x / pixelSize)
+                            let y = Int(value.location.y / pixelSize)
+                            let clampedX = max(0, min(editorState.canvasSize - 1, x))
+                            let clampedY = max(0, min(editorState.canvasSize - 1, y))
+                            editorState.applyShapeEnd(at: clampedX, y: clampedY)
+                            currentDragPixel = nil
+                        }
+
                         isDragging = false
                         lastDragPixel = nil
                     }

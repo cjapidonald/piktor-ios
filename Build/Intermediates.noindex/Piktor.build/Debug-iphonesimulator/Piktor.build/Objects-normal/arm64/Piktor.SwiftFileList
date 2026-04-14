@@ -1,0 +1,14 @@
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Config.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/PiktorApp.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Models/Models.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Models/SupabaseManager.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Utils/DrawingTools.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Utils/EditorState.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Auth/LoginView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Dashboard/DashboardView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/ColorPickerView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/DrawingsGalleryView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/EditorView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/PixelCanvasView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/ToolBarView.swift
+/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Tasks/TasksView.swift

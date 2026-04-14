@@ -3,19 +3,20 @@ import SwiftUI
 struct ColorPickerView: View {
     @ObservedObject var editorState: EditorState
 
-    // 32-color palette (classic pixel art palette)
+    // 32-color PICO-8 palette (matches web app)
     static let palette: [String] = [
-        // Row 1: Grayscale
-        "000000", "1A1A1A", "333333", "4D4D4D",
-        "666666", "808080", "999999", "B3B3B3",
-        "CCCCCC", "E6E6E6", "F2F2F2", "FFFFFF",
-        // Row 2: Warm colors
-        "FF0000", "FF4400", "FF8800", "FFBB00",
-        "FFDD00", "FFFF00", "CCFF00", "88FF00",
-        // Row 3: Cool colors + extras
-        "00FF00", "00FF88", "00FFFF", "0088FF",
-        "0044FF", "0000FF", "4400FF", "8800FF",
-        "CC00FF", "FF00FF", "FF0088", "FF0044",
+        // Row 1
+        "000000", "1D2B53", "7E2553", "008751",
+        "AB5236", "5F574F", "C2C3C7", "FFF1E8",
+        // Row 2
+        "FF004D", "FFA300", "FFEC27", "00E436",
+        "29ADFF", "83769C", "FF77A8", "FFCCAA",
+        // Row 3
+        "FFFFFF", "1A1C2C", "5D275D", "B13E53",
+        "EF7D57", "FFCD75", "A7F070", "38B764",
+        // Row 4
+        "257179", "3B5DC9", "41A6F6", "73EFF7",
+        "F4F4F4", "94B0C2", "566C86", "333C57",
     ]
 
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 3), count: 12)

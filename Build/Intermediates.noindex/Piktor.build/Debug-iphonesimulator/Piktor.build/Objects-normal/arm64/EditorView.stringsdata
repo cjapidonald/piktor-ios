@@ -1,0 +1,104 @@
+{
+  "source": "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/EditorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Clear Canvas?",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 224
+        }
+      },
+      {
+        "comment": "",
+        "key": "Saved!",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save Error",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 237
+        }
+      },
+      {
+        "comment": "",
+        "key": "Saved!",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save failed",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 63
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 225
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "This will erase all pixels. You can undo this action.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your drawing has been saved to the cloud.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "OK",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 241
+        }
+      }
+    ]
+  },
+  "version": 1
+}

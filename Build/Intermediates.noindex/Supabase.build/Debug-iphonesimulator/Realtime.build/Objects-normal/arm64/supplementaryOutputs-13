@@ -1,0 +1,23 @@
+{
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/supabase-swift/Sources/Realtime/CallbackManager.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/CallbackManager.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/CallbackManager.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/CallbackManager.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/CallbackManager.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/CallbackManager.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/supabase-swift/Sources/Realtime/Deprecated/Defaults.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Defaults.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Defaults.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Defaults.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Defaults.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Defaults.swiftdeps"
+  },
+  "/Users/donaldcjapi/Library/Developer/Xcode/DerivedData/Piktor-guyavtaemplebdasglthkqbpmnqr/SourcePackages/checkouts/supabase-swift/Sources/Realtime/Deprecated/Delegated.swift" : {
+    "const-values" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Delegated.swiftconstvalues",
+    "dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Delegated.d",
+    "diagnostics" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Delegated.dia",
+    "object" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Delegated.o",
+    "swift-dependencies" : "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Build/Intermediates.noindex/Supabase.build/Debug-iphonesimulator/Realtime.build/Objects-normal/arm64/Delegated.swiftdeps"
+  }
+}

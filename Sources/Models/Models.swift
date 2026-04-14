@@ -220,3 +220,24 @@ extension Color {
         #endif
     }
 }
+
+// MARK: - Blog Post
+struct BlogPost: Codable, Identifiable {
+    let id: UUID
+    let title: String
+    let slug: String
+    let excerpt: String
+    let content: String
+    let coverImageUrl: String?
+    let authorId: UUID
+    let published: Bool
+    let tags: [String]
+    let createdAt: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id, title, slug, excerpt, content, published, tags
+        case coverImageUrl = "cover_image_url"
+        case authorId = "author_id"
+        case createdAt = "created_at"
+    }
+}

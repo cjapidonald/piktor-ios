@@ -1,0 +1,40 @@
+{
+  "source": "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/PiktorApp.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Loading...",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dashboard",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tasks",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Gallery",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 56
+        }
+      }
+    ]
+  },
+  "version": 1
+}

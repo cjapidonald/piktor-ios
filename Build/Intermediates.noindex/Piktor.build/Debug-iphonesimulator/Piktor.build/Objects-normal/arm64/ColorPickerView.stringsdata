@@ -1,0 +1,24 @@
+{
+  "source": "/Users/donaldcjapi/Desktop/Piktor/piktor-ios/Sources/Views/Editor/ColorPickerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "#%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "ERASE",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 76
+        }
+      }
+    ]
+  },
+  "version": 1
+}
